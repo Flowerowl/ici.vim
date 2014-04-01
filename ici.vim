@@ -30,13 +30,11 @@ def show(node):
                 print '---------------------------'
             if tag_name == 'orig':
                 print content
-                print '---------------------------'
             if tag_name == 'trans':
                 print content
                 print '---------------------------'
             if tag_name == 'pos':
                 print content
-                print '---------------------------'
             if tag_name == 'acceptation':
                 print content
                 print '---------------------------'
