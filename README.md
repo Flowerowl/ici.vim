@@ -6,6 +6,11 @@
 
 * 支持BundleInstall
 
+	.vimrc 添加Bundle 'Flowerowl/ici.vim'
+
+	:BundleInstall
+	
+
 ![ici1](pic/ici_vim1.png)
 
 ![ici2](pic/ici_vim2.png)
