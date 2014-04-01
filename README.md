@@ -10,6 +10,7 @@
 
 	:BundleInstall
 	
+* 终端版ici: https://github.com/Flowerowl/ici.vim
 
 ![ici1](pic/ici_vim1.png)
 
