@@ -12,6 +12,15 @@
 	
 * 终端版ici: https://github.com/Flowerowl/ici.vim
 
+## How to Use
+
+* :Ici word
+
+* :IciFrom
+	
+	选中某个单词, :IciFrom即可查询 
+
 ![ici1](pic/ici_vim1.png)
 
 ![ici2](pic/ici_vim2.png)
+
