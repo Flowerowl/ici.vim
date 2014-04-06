@@ -1,7 +1,5 @@
 function! Ici(word)
-
 python << endpython
-
 import vim
 
 import sys
@@ -12,6 +10,7 @@ from xml.dom import minidom
 WORD= vim.eval("a:word")
 KEY = 'E0F0D336AF47D3797C68372A869BDBC5'
 URL = 'http://dict-co.iciba.com/api/dictionary.php'
+
 
 def get_response(word):
     return urllib2.urlopen(URL + '?key=' + KEY + '&w=' + word)
@@ -48,9 +47,15 @@ def main():
 
 if __name__ == '__main__':
     main()
-
 endpython
-
 endfunction
 
+
+function! IciFrom()
+let word = expand("<cword>")
+call Ici(word)
+endfunction
+
+
 command! -nargs=1 Ici :call Ici(<q-args>)
+command! -nargs=0 IciFrom :call IciFrom()
