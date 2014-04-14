@@ -20,6 +20,10 @@
 	
 	选中某个单词, :IciFrom即可查询 
 
+### 注意
+
+windows上需要自行编译vim的python支持
+
 ![ici1](pic/ici_vim1.png)
 
 ![ici2](pic/ici_vim2.png)
