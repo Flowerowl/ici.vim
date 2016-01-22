@@ -1,6 +1,6 @@
 # ici.vim 基于python的vim查词插件
 
-## Install
+# Install
 
 * 将ici.vim 拷贝到~/.vim/plugin/文件夹下即可
 
@@ -20,7 +20,7 @@
 	
 	选中某个单词, :IciFrom即可查询 
 
-### 注意
+# 注意
 
 windows上需要自行编译vim的python支持
 
@@ -28,3 +28,9 @@ windows上需要自行编译vim的python支持
 
 ![ici2](pic/ici_vim2.png)
 
+
+# Other Versions
+
+* Python <https://github.com/Flowerowl/ici>
+
+* Golang <https://github.com/Flowerowl/ici.go>
