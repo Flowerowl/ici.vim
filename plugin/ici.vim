@@ -1,13 +1,14 @@
-function! s:UsingPython3()
-  if has('python3')
-    return 1
+let s:python_until_eof = "python3 << EOF"
+if !has("python3")
+  let s:python_until_eof = "python << EOF"
+  if !has("python")
+    echohl WarningMsg
+    echom  "Ici requires py >= 2.7 or py3"
+    echohl None
+    unlet s:python_until_eof
+    finish
   endif
-  return 0
-endfunction
-
-
-let s:using_python3 = s:UsingPython3()
-let s:python_until_eof = s:using_python3 ? "python3 << EOF" : "python << EOF"
+endif
 
 function! Ici(word)
   exec s:python_until_eof
